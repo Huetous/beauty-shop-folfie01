@@ -1,2 +1,2 @@
 # beauty-shop-folfie01
-![alt text](app/images/masters/1.png)
+![alt text](beauty-shop-folfie01/app/images/masters/1.jpg)
