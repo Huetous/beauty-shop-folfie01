@@ -1,0 +1,49 @@
+@import "../fonts"
+@import "../vars"
+
+.site-header
+  display: flex
+  position: relative
+  top: 0
+  .flex-center
+    margin: auto
+    text-align: center
+    position: relative
+    p
+    .header-title
+      margin-bottom: 40px
+      p
+        text-transform: uppercase
+        font-size: 14px
+        display: flex
+        align-items: center
+        white-space: nowrap
+        margin: 0 0 -10px 0
+        &::before,&::after
+          content: ''
+          height: 1px
+          width: 100%
+          position: relative
+          background-color: #ffffff
+          display: inline-block
+        span
+          margin: 0 10px
+      .h1
+        margin: 0
+        font-weight: 100
+        font-size: 65px
+        line-height: 1.6
+        border-bottom: 1px solid #ffffff
+        text-transform: uppercase
+      strong
+        font-size: 17px
+        display: block
+        text-transform: uppercase
+        margin-top: 5px
+        .fa
+          font-size: 12px
+          margin-right: 10px
+          color: $accent
+          &:last-child
+            margin-left: 10px
+            margin-right: inherit

@@ -1,0 +1,299 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+
+a
+  color: black
+a:hover,
+a:active,
+a:focus
+  color: $accent
+  outline: none
+  text-decoration: none
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+::selection
+  background-color: $accent
+  color: $text
+
+.site-cover
+  height: 800px
+  background-size: cover
+  background: center center no-repeat
+  width: 100%
+  .site-container
+    position: relative
+    z-index: 10
+
+.bg-section
+  background: rgba(0, 0, 0, 0.05)
+
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.7)
+  transition: 0.5s
+
+#site-services,
+#site-masters,
+#site-gallery,
+#site-blog,
+#site-subscription,
+#site-reviews,
+#site-blog,
+#site-footer
+  padding: 6em 0
+  clear: both
+
+.site-heading
+  margin-bottom: 5em
+  h2
+    font-size: 30px
+    margin-bottom: 40px
+    line-height: 1.5
+    color: #000
+    text-transform: uppercase
+    position: relative
+    &::after
+      position: absolute
+      bottom: -10px
+      left: 0
+      right: 0
+      width: 60px
+      height: 2px
+      margin: 0 auto
+      background: $accent
+      content: ''
+    p
+      font-size: 18px
+      line-height: 1.5
+      color: #828282
+    span
+      display: block
+      margin-bottom: 10px
+      text-transform: uppercase
+      font-size: 12px
+      letter-spacing: 2px
+
+#blackout
+  background: rgba(0,0,0,0.3)
+  position: absolute
+  top: 0
+  overflow: hidden
+  z-index: 999999
+  left: 0
+  display: none
+
+.popup
+  display: flex
+  width: 100%
+  min-height: 100%
+  background-color: rgba(0,0,0,0.5)
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 99999
+  transition: 0.5s
+  .popup-content
+    padding: 6px 18px
+    width: 600px
+    display: inline-block
+    margin: auto
+    background-color: $text
+    border-radius: 5px
+    box-shadow: 0 0 10px #000
+    position: relative
+    .image
+      text-align: center
+      margin-bottom: 10px
+      img
+        width: 400px
+    h1,h3
+      text-align: center
+    h1
+      color: $accent
+    h3
+      color: $light
+    .close
+      position: absolute
+      right: 15px
+      cursor: pointer
+      font-size: 25px
+      color: $accent
+    ul
+      margin: 0 0 0 30px
+      padding: 0
+      li
+        list-style: none
+        i
+          margin-right: 10px
+          color: $gold
+    .order
+      text-align: center
+      margin: 20px 0
+    &.blog-item, &.gallery-item
+      width: 1000px
+    &.blog-item
+      height: 800px
+      .post-info
+        float: left
+        margin: 20px 20px 0 0
+        color: $light
+        .post-date-container
+          border-top: 1px solid $light
+          border-bottom: 1px solid $light
+      .comment
+        float: right
+        a
+          color: $light
+          i
+            margin-left: 5px
+      .post-text
+        padding: 0 40px
+        text-align: justify
+        &.custom-scroll
+          height: 80%
+        h2
+          margin-top: 10px
+    &.gallery-item
+      .fotorama__wrap
+        margin: auto
+    .submit
+      background-color: $accent
+      color: $text
+      width: 70%
+      padding: 10px
+      margin-top: 50px
+      &:hover
+        background-color: lighten($accent, 5%)
+
+  .custom-scroll
+    overflow: auto
+    height: 300px
+    &::-webkit-scrollbar
+      width: 5px
+    &::-webkit-scrollbar-thumb
+      background-color: $accent
+      border-radius: 10px
+    li
+      margin: 10px 0
+      padding: 0 20px 0 10px
+      .service-cost
+        float: right
+        i
+          margin-left: 10px
+      .service-name
+        display: inline-block
+        width: 70%
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+
+
+.form
+  position: relative
+  z-index: 1
+  max-width: 720px
+  margin-top: 45px
+  padding: 0 45px 45px 45px
+  text-align: center
+  h1
+    font-size: 20px
+    color: $accent
+  h2
+    margin: 0
+    position: relative
+    &::after
+      position: absolute
+      bottom: -10px
+      left: 0
+      right: 0
+      width: 60px
+      height: 2px
+      margin: 0 auto
+      background: $accent
+      content: ''
+  textarea
+    resize: none
+    height: 150px
+  input,textarea
+    color: $light
+    outline: 0
+    background-color: $text
+    width: 100%
+    border: 0
+    border-bottom: 1px solid $light
+    margin: 0 0 15px
+    padding: 15px
+    box-sizing: border-box
+    font-size: 16px
+    &:active,&:focus
+      border-bottom: 2px solid $accent
+
+.superstyle
+  &::-webkit-inner-spin-button,
+  &::-webkit-calendar-picker-indicator
+    display: none
+    -webkit-appearance: none
+
+
+@import "media" // Всегда в конце

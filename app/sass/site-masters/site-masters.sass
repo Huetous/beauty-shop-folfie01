@@ -1,0 +1,52 @@
+@import "../fonts"
+@import "../vars"
+
+#site-masters
+  color: $dark
+  .master
+    position: relative
+    background: rgba(0, 0, 0, 0.05)
+    .title
+      width: 100%
+      position: absolute
+      bottom: 60%
+      left: 42%
+      transform: rotate(270deg)
+      h3
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 3px
+        margin: 0
+        padding: 0
+        a
+          color: $dark
+          &:hover, &:focus
+            color: $accent
+      span
+        text-transform: uppercase
+        letter-spacing: 3px
+        font-size: 13px
+        color: rgba(0, 0, 0, 0.4)
+    .desc
+      width: 70%
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      background: white
+      padding: 7px
+      .masters-social
+        margin: 0
+        padding: 0
+        li
+          margin: 0
+          padding: 0
+          list-style: none
+          display: inline-block
+          a
+            display: inline-block
+            color: $dark
+            padding-left: 10px
+            padding-right: 10px
+            i
+              font-size: 16px
