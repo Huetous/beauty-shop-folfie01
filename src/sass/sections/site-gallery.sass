@@ -1,0 +1,56 @@
+@import "../fonts"
+@import "../vars"
+
+.site-gallery
+  &-list
+    flex-wrap: wrap
+    display: flex
+    position: relative
+    padding: 0
+    margin: 0
+    width: 100%
+    li
+      display: block
+      margin: 0 0 15px 1%
+      list-style: none
+      min-height: 400px
+      background: center center no-repeat
+      background-size: cover
+      position: relative
+      a
+        min-height: 400px
+        padding: 2em
+        position: relative
+        width: 100%
+        display: block
+        transition: .5s
+        &:hover
+          opacity: 0
+      &.two-third
+        width: 48.6%
+      &.one-third
+        width: 23.8%
+    &-case
+      width: auto
+      bottom: 2em
+      left: 2em
+      right: 2em
+      position: absolute
+      span
+        background-color: $accent
+        border-radius: 30px
+        padding: 5px
+        text-transform: uppercase
+        letter-spacing: 2px
+        font-size: 13px
+        color: $text
+      h2
+        font-size: 20px
+        font-weight: 300
+        color: $accent
+        text-align: center
+        background-color: $text
+        border-radius: 30px
+        margin-bottom: 0
+
+

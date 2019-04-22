@@ -1,0 +1,50 @@
+@import "../fonts"
+@import "../vars"
+
+.site-top
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  &-info
+    margin-bottom: 0
+    padding: 4px 0
+    background-color: $accent
+    text-align: right
+  &-num,
+  &-social
+    display: inline-block
+    margin: 0
+  &-num
+    font: 13px "Arial"
+    padding-right: 20px
+    margin-right: 10px
+    border-right: 1px solid $text
+  &-social
+    padding: 0
+    li
+      display: inline-block
+      a
+        padding: 0 7px
+        i
+          font-size: 13px
+          color: $text
+  &-menu
+    padding: 28px 0
+    text-align: center
+    &-list
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        display: inline
+        a
+          font-size: 13px
+          padding: 30px 15px
+          text-transform: uppercase
+          letter-spacing: 2px
+    &-logo
+      a
+        img
+          width: 80px
+    &-order
+      border: 2px solid $accent
+      padding: 3px
+
